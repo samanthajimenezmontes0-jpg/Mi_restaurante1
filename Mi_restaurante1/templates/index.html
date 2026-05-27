@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Restaurante Sabor Peruano</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+    <nav>
+
+        <a href="/">Inicio</a>
+        <a href="/">Menú</a>
+        <a href="/">Promociones</a>
+        <a href="/contacto">Contacto</a>
+        <a href="/login">Login</a>
+
+    </nav>
+
+    <section class="banner">
+
+        <div class="banner-texto">
+             
+            <h1>RESTAURANTE SABOR PERUANO</h1>
+
+            <p>Disfruta la mejor comida peruana</p>
+
+            <button>Ver Menú</button>
+
+        </div>
+
+    </section>
+
+    <section class="bienvenida">
+
+      <h2>Bienvenido a Nuestro Restaurante</h2>
+
+      <p class="texto-bienvenida">
+        Disfruta la mejor comida peruana preparada con sabor y tradición.
+      </p>
+
+     <div class="horario">
+
+        <h3>Horario de Atención</h3>
+
+        <p>Lunes a Domingo | 9:00 am - 10:00 pm</p>
+
+     </div>
+
+    </section>
+
+    <div class="contenedor">
+
+        <div class="plato">
+
+            <img src="{{ url_for('static', filename='img/lomo.jpg') }}">
+
+            <h2>Lomo Saltado</h2>
+
+            <p>Delicioso plato criollo</p>
+
+            <h3>S/25.00</h3>
+
+            <button onclick="alert('Pedido realizado')">
+                Pedir
+            </button>
+
+        </div>
+
+        <div class="plato">
+
+            <img src="{{ url_for('static', filename='img/Ceviche.jpg') }}">
+
+            <h2>Ceviche</h2>
+
+            <p>Pescado fresco con limón</p>
+
+            <h3>S/30.00</h3>
+
+            <button onclick="alert('Pedido realizado')">
+                Pedir
+            </button>
+
+        </div>
+
+        <div class="plato">
+
+            <img src="{{ url_for('static', filename='img/Arroz con pollo.jpg') }}">
+
+            <h2>Arroz con Pollo</h2>
+
+            <p>Tradicional comida peruana</p>
+
+            <h3>S/20.00</h3>
+
+            <button onclick="alert('Pedido realizado')">
+                Pedir
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="formulario">
+
+        <h2>Realizar Pedido</h2>
+
+        <input type="text" placeholder="Tu nombre">
+
+        <input type="text" placeholder="Plato">
+
+        <input type="number" placeholder="Cantidad">
+
+        <button>Enviar Pedido</button>
+
+    </div>
+
+    <footer>
+
+        <p>© 2026 Restaurante Sabor Peruano</p>
+
+    </footer>
+
+</body>
+</html>
